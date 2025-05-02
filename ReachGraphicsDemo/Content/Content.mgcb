@@ -10,7 +10,7 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\ContentPipelineExtension\bin\Debug\net6.0\ContentPipelineExtension.dll
+/reference:..\..\ContentPipelineExtension\bin\Debug\net8.0\ContentPipelineExtension.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -31,6 +31,7 @@
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
+/processorParam:Smoothing=Normal
 /build:BigFont.spritefont
 
 #begin cat.tga
@@ -69,6 +70,7 @@
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
+/processorParam:Smoothing=Normal
 /build:font.spritefont
 
 #begin grid.x
@@ -128,18 +130,6 @@
 /processorParam:SwapWindingOrder=False
 /processorParam:TextureFormat=Compressed
 /build:saucer.fbx
-
-#begin sky.bmp
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:sky.bmp
 
 #begin tank.fbx
 /importer:FbxImporter

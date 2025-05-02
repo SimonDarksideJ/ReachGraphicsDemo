@@ -23,7 +23,7 @@ namespace MonoGameGraphicsDemo
     class SkinnedDemo : MenuComponent
     {
         // Fields.
-        //Sky sky;
+        Sky sky;
         Model dude;
         AnimationPlayer animationPlayer;
 
@@ -58,7 +58,7 @@ namespace MonoGameGraphicsDemo
         /// </summary>
         protected override void LoadContent()
         {
-            //sky = Game.Content.Load<Sky>("sky");
+            sky = Game.Content.Load<Sky>("sky");
             dude = Game.Content.Load<Model>("dude");
 
             // Look up our custom skinning information.
@@ -110,7 +110,7 @@ namespace MonoGameGraphicsDemo
             // Draw the background.
             GraphicsDevice.Clear(Color.Black);
 
-            //sky.Draw(view, projection);
+            sky.Draw(view, projection);
 
             DrawTitle("skinned effect", null, new Color(127, 112, 104));
 
